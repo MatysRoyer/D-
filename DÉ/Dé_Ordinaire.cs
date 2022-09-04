@@ -15,9 +15,9 @@ namespace DÉ
 
         public override int Brasser(Random random, int nbface)
         {
-            int Ordinaire;
-            Ordinaire = random.Next(1, nbface + 1);
-            return Ordinaire;
+            int déOrdianire;
+            déOrdianire = random.Next(1, nbface + 1);
+            return déOrdianire;
         }
     }
 

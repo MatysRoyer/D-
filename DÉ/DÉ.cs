@@ -10,7 +10,7 @@ namespace DÉ
     {
         private int nbFaces = 6;
         private bool typeDé;
-        Random random = new Random();
+        public Random random = new Random();
 
         public DÉ(int nbFace)
         {

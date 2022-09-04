@@ -8,13 +8,23 @@ namespace DÉ
 {
     internal class Dé_Pipé : DÉ
     {
-        public Dé_Pipé(string nbFace) : base(nbFace)
+        public Dé_Pipé(int nbFace) : base(nbFace)
         {
         }
 
-        public override int Brasser()
+        public override int Brasser(Random random, int NbFaces)
         {
-           
+            int déPipe;
+            déPipe = random.Next(1, NbFaces + 4);
+            return déPipe;
+
         }
+
+
+
+        //public override string ToString()
+        //{
+        //    return $"Le dé pipé retourne la valeur{Brasser( random, )}";
+        //}
     }
 }
