@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DÉ
 {
-    internal class Dé_Ordinaire : DÉ
+    public class Dé_Ordinaire : DÉ
     {
       
         public Dé_Ordinaire(int nbFace) : base(nbFace)
@@ -18,6 +18,13 @@ namespace DÉ
             int déOrdianire;
             déOrdianire = random.Next(1, nbface + 1);
             return déOrdianire;
+        }
+
+
+
+        public override string ToString()
+        {
+            return $"Le dé ordinaire";
         }
     }
 

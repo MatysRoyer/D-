@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DÉ
 {
-    internal class Dé_Pipé : DÉ
+    public class Dé_Pipé : DÉ
     {
         public Dé_Pipé(int nbFace) : base(nbFace)
         {
@@ -22,9 +22,9 @@ namespace DÉ
 
 
 
-        //public override string ToString()
-        //{
-        //    return $"Le dé pipé retourne la valeur{Brasser( random, )}";
-        //}
+        public override string ToString()
+        {
+            return $"Le dé pipé";
+        }
     }
 }
