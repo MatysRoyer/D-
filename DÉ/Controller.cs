@@ -24,15 +24,27 @@ namespace DÉ
             {
               return  dé_Ordinaire;
             }
+            else if (nombreAleatoire == 2)
+            {
+                return dé_Pipé;
+            }
+
+            return null;
+              
            
-            
-               return dé_Pipé;
-            
-
-
-            
         
         }
+
+        public int ValeurTotalOrdinaire(int valeur) 
+        {
+
+            foreach (Dé_Ordinaire dé_Ordinaire in )
+            {
+
+            }
+        }
+
+
 
     }
 }

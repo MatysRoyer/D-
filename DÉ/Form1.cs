@@ -23,25 +23,33 @@ namespace DÉ
 
      public void button1_Click(object sender, EventArgs e)
         {
+           
             Dé_Ordinaire dé_Ordinaire = new Dé_Ordinaire(6);
             Dé_Pipé dé_Pipé = new Dé_Pipé(6);
 
 
 
-           MessageBox.Show(controller.GenererDéAleatoire(dé_Pipé, dé_Ordinaire).ToString());
+           
 
             if (controller.GenererDéAleatoire(dé_Pipé, dé_Ordinaire) == dé_Pipé)
             {
-                MessageBox.Show("salut");
+                MessageBox.Show("dé pipé");
               int valeurPipé =  dé_Pipé.Brasser(controller.random,6);
+               
                 MessageBox.Show(valeurPipé.ToString());
+
+              
+               
             }
-            else if (controller.GenererDéAleatoire(dé_Pipé, dé_Ordinaire) == dé_Ordinaire) 
+            else 
             {
                
-                MessageBox.Show("allo");
+                MessageBox.Show("dé ordinaire");
                int valeurOrdinaire = dé_Ordinaire.Brasser(controller.random, 6);
+              
                 MessageBox.Show(valeurOrdinaire.ToString());
+
+               // MessageBox.Show(controller.ValeurTotalOrdinaire(valeurOrdinaire).ToString());
             }
            
             
