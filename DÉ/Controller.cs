@@ -57,12 +57,7 @@ namespace DÉ  //Bonjour le code dans le controller marchait bien, mais il y a q
 
 
 
-       // ici j'aurais pu mettre la fonction brasser au lieu de form1 exemple 
-       //if(nombreAleatoire == 1)
-       //{
-         // return  dé_Ordinaire ;
-         //dé_Ordinaire.Brasser(random, Dé)
-       //}
+       
 
 
 
