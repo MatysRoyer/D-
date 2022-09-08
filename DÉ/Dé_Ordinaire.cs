@@ -8,16 +8,19 @@ namespace DÉ
 {
     public class Dé_Ordinaire : DÉ
     {
-      
-        public Dé_Ordinaire(int nbFace) : base(nbFace)
+       
+
+        public Dé_Ordinaire(int nbFaces) : base(nbFaces)
         {
         }
 
-        public override int Brasser(Random random, int nbface)
+        public override int Brasser(Random random , int nbfaces )
         {
-            int déOrdianire;
-            déOrdianire = random.Next(1, nbface + 1);
-            return déOrdianire;
+         
+           Valeur = random.Next(1, 6);
+
+            return Valeur;
+            
         }
 
 

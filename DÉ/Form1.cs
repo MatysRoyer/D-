@@ -29,30 +29,39 @@ namespace DÉ
 
 
 
-           
 
-            if (controller.GenererDéAleatoire(dé_Pipé, dé_Ordinaire) == dé_Pipé)
+
+            if (controller.GenererDéEtNombreAleatoire(dé_Pipé, dé_Ordinaire) == dé_Pipé)
             {
                 MessageBox.Show("dé pipé");
-              int valeurPipé =  dé_Pipé.Brasser(controller.random,6);
-               
+                int valeurPipé = dé_Pipé.Brasser(controller.random, 10);
+                int valeurAdditionPipé = controller.ValeurTotal += dé_Pipé.Valeur;
+
                 MessageBox.Show(valeurPipé.ToString());
 
-              
-               
+                MessageBox.Show(valeurAdditionPipé.ToString());
+
             }
-            else 
+            else
             {
-               
+
                 MessageBox.Show("dé ordinaire");
-               int valeurOrdinaire = dé_Ordinaire.Brasser(controller.random, 6);
-              
+
+                int valeurOrdinaire = dé_Ordinaire.Brasser(controller.random, 6);
+
+                int valeurAdditionOrdinaire = controller.ValeurTotal += dé_Ordinaire.Valeur;
                 MessageBox.Show(valeurOrdinaire.ToString());
 
-               // MessageBox.Show(controller.ValeurTotalOrdinaire(valeurOrdinaire).ToString());
+                MessageBox.Show(valeurAdditionOrdinaire.ToString());
+                
+
+
+
+
+
             }
-           
-            
+
+
 
         }
 

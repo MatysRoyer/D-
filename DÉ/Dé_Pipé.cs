@@ -12,11 +12,11 @@ namespace DÉ
         {
         }
 
-        public override int Brasser(Random random, int nbFace)
+        public override int Brasser(Random random, int nbfaces)
         {
-            int déPipe;
-            déPipe = Aleatoire();
-            return déPipe;
+          
+            Valeur = Aleatoire();
+            return Valeur;
 
         }
         private int Aleatoire()
