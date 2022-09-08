@@ -9,8 +9,10 @@ namespace DÉ
     public abstract class DÉ
     {
         private int nbFaces = 6;
-        private bool typeDé;
         public Random random = new Random();
+        private int valeur;
+
+        public int Valeur { get => valeur; set => valeur = value; }
 
         public DÉ(int nbFace)
         {
@@ -19,6 +21,6 @@ namespace DÉ
         }
 
 
-        public abstract int Brasser(Random random, int NbFaces);
+        public abstract int Brasser(Random random, int nbfaces);
     }
 }

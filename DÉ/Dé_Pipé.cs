@@ -12,14 +12,27 @@ namespace DÉ
         {
         }
 
-        public override int Brasser(Random random, int NbFaces)
+        public override int Brasser(Random random, int nbfaces)
         {
-            int déPipe;
-            déPipe = random.Next(1, NbFaces + 4);
-            return déPipe;
+          
+            Valeur = Aleatoire();
+            return Valeur;
 
         }
+        private int Aleatoire()
+        {
+   
+            int nombre = random.Next(1, 10);
 
+            if (nombre > 6)
+            {
+                nombre = nombre - 3;
+            }
+            return nombre;
+
+           
+
+        }
 
 
         public override string ToString()
